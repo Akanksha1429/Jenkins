@@ -5,7 +5,7 @@ Install Jenkins, Configure Docker, Setting up CI/CD, Deploy applications to k8s.
 
 ### STEP 1 : CREATING AN AWS EC2 INSTANCE.
 Need to go to AWS Console > Instances(running) > Click on the Launch instance button > Fill in all the required details for configuring the instance > Click Launch Instance
-![alt text](image1.png)
+![alt text](./images/image1.png)
 
 ### STEP 2 : Install Jenkins.
 Pre-Requisite:
@@ -33,21 +33,21 @@ Point to Ponder : Jenkins won't be accessible from external world due to restric
     - Click on security tab from the below list.
     - Followed by opening the Security groups.
     - Add inbound traffic rules and allow traffic on the port 8080. You may either allow TCP on 8080 or allow all traffic.
-    ![inbound rules](image2.png)
+    ![inbound rules](./images/image2.png)
 
 - Login to Jenkins using URL "http://<Public IP_address of the EC2 instance>:8080
 
 - After login to Jenkins you may need to execute the command "sudo cat /var/lib/jenkins/secrets/initialAdminPassword" and enter the administartor password .
-![admin passowrd](image3.png)
+![admin passowrd](./images/image3.png)
 
 - Need to install the suggested packages by clicking on Install suggested plugins.
-![Installing required plugins](image4.png)
+![Installing required plugins](./images/image4.png)
 
 - Create First Admin User
-![admin user](image5.png)
+![admin user](./images/image5.png)
 
 - On succesfull installation of the Jenkins we may start using it.
-![Jenkins](image6.png)
+![Jenkins](./images/image6.png)
 
 ### STEP 4 : DOCKER Configuration
 Run the below command to Install Docker :
